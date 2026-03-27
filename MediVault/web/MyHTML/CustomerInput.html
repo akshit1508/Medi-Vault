@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Customer</title>
+     <link rel="stylesheet" href="/MediVault/MyCSS/SupplierPage.css">
+</head>
+<body>
+    <h1>Add Customer</h1>
+    <form action="/MediVault/CustomerInput" method="post">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="text" name="phone" placeholder="Enter Phone Number">
+        <input type="email" name="email" placeholder="Enter Email">
+        <textarea name="address" placeholder="Enter Address"></textarea>
+        <button type="submit">Save Customer</button>
+    </form>
+</body>
+</html>

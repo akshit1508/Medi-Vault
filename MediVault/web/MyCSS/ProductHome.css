@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+/* Back Button at Top-Left */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    color: #ff6a00; /* Highlight color on hover */
+    text-decoration: underline;
+}
+
+/* Heading */
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Button Container */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Buttons */
+.button-container button {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6a00, #ff4e00);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.button-container button:hover {
+    background: linear-gradient(135deg, #ff4e00, #ff6a00);
+    transform: translateY(-5px);
+}
+
+.button-container button:active {
+    transform: scale(0.95);
+}
+
+/* Button Focus */
+.button-container button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 114, 0, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+}
