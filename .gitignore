@@ -1,0 +1,20 @@
+# Maven build output
+**/target/
+**/*.class
+**/.idea/
+**/*.iml
+
+# Node & Next.js
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+next-env.d.ts
+
+# OS & Logs
+.DS_Store
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
